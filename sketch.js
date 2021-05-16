@@ -47,7 +47,7 @@ function draw() {
      fish_x = fishPositions[i][0];
      fish_y = fishPositions[i][1];
      fill(pixels[(round(fish_x)+round(fish_y)*width)*4]);
-      ellipse(fishPositions[i][0],fishPositions[i][1],30)
+      ellipse(fishPositions[i][0],fishPositions[i][1],20)
     }
     zoff +=inc;
 }
