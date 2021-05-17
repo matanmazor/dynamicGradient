@@ -1,7 +1,7 @@
 
 var inc = 0.005;
 var zoff=0
-const numFish = 100; // I call the dots fish
+const numFish = 25*25; // I call the dots fish
 var fishPositions = [];
 var bg = true
 
@@ -12,7 +12,7 @@ function setup() {
     noise = new OpenSimplexNoise(Date.now());
 
     for (i_fish=0; i_fish<numFish; i_fish++) {
-      fishPositions.push([floor(i_fish/10)*width/10+25, (i_fish%10)*height/10+25])
+      fishPositions.push([floor(i_fish/25)*width/26+25, (i_fish%25)*height/26+25])
     }
 }
 
